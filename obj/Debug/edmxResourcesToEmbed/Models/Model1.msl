@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Demo_Project_DBModelStoreContainer" CdmEntityContainer="Demo_Project_DBEntities1">
+    <EntitySetMapping Name="AreaMasters">
+      <EntityTypeMapping TypeName="Demo_Project_DBModel.AreaMaster">
+        <MappingFragment StoreEntitySet="AreaMaster">
+          <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+          <ScalarProperty Name="Area_Name" ColumnName="Area_Name" />
+          <ScalarProperty Name="Related_City_Id" ColumnName="Related_City_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CityMasters">
+      <EntityTypeMapping TypeName="Demo_Project_DBModel.CityMaster">
+        <MappingFragment StoreEntitySet="CityMaster">
+          <ScalarProperty Name="City_Id" ColumnName="City_Id" />
+          <ScalarProperty Name="City_Name" ColumnName="City_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EnquiryMasters">
+      <EntityTypeMapping TypeName="Demo_Project_DBModel.EnquiryMaster">
+        <MappingFragment StoreEntitySet="EnquiryMaster">
+          <ScalarProperty Name="Enquiry_Id" ColumnName="Enquiry_Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Enquiry_Message" ColumnName="Enquiry_Message" />
+          <ScalarProperty Name="Enquiry_DateTime" ColumnName="Enquiry_DateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LoginMasters">
+      <EntityTypeMapping TypeName="Demo_Project_DBModel.LoginMaster">
+        <MappingFragment StoreEntitySet="LoginMaster">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+          <ScalarProperty Name="User_Type" ColumnName="User_Type" />
+          <ScalarProperty Name="User_Status" ColumnName="User_Status" />
+          <ScalarProperty Name="Login_Count" ColumnName="Login_Count" />
+          <ScalarProperty Name="Last_Login_DateTime" ColumnName="Last_Login_DateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UploadManagers">
+      <EntityTypeMapping TypeName="Demo_Project_DBModel.UploadManager">
+        <MappingFragment StoreEntitySet="UploadManager">
+          <ScalarProperty Name="Upload_Id" ColumnName="Upload_Id" />
+          <ScalarProperty Name="Title_of_File" ColumnName="Title_of_File" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Uploaded_BY" ColumnName="Uploaded_BY" />
+          <ScalarProperty Name="File_Name" ColumnName="File_Name" />
+          <ScalarProperty Name="Folder_Name" ColumnName="Folder_Name" />
+          <ScalarProperty Name="File_Type" ColumnName="File_Type" />
+          <ScalarProperty Name="File_Size_In_KB" ColumnName="File_Size_In_KB" />
+          <ScalarProperty Name="Upload_DT" ColumnName="Upload_DT" />
+          <ScalarProperty Name="Is_Del" ColumnName="Is_Del" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserMasters">
+      <EntityTypeMapping TypeName="Demo_Project_DBModel.UserMaster">
+        <MappingFragment StoreEntitySet="UserMaster">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+          <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+          <ScalarProperty Name="Related_City_Id" ColumnName="Related_City_Id" />
+          <ScalarProperty Name="Related_Area_Id" ColumnName="Related_Area_Id" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Picture_File_Name" ColumnName="Picture_File_Name" />
+          <ScalarProperty Name="DateTime_of_Reg" ColumnName="DateTime_of_Reg" />
+          <ScalarProperty Name="Is_Del" ColumnName="Is_Del" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeedbackMasters">
+      <EntityTypeMapping TypeName="Demo_Project_DBModel.FeedbackMaster">
+        <MappingFragment StoreEntitySet="FeedbackMaster">
+          <ScalarProperty Name="Submitted_On" ColumnName="Submitted_On" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Star_Rating" ColumnName="Star_Rating" />
+          <ScalarProperty Name="Topic" ColumnName="Topic" />
+          <ScalarProperty Name="Submitted_By" ColumnName="Submitted_By" />
+          <ScalarProperty Name="Feedback_Id" ColumnName="Feedback_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

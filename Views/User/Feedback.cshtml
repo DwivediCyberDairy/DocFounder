@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Feedback";
+    Layout = "~/Views/Shared/User_Layout.cshtml";
+}
+
+<script>
+    // Tpo manage star color on selection
+    $(document).ready(function () { 
+    $(".starrating").css("cursor", "pointer");
+        $(".starrating").click(function () {
+            var star= $(this).attr("data-star");
+            //alert(star);
+            $(".starrating").css("color", "yellow");
+            var star = $(this).attr("data-star");
+            for (x = 0; x < star; x++) {
+                $(".starrating").eq(x).css("color", "green");
+            }
+            $("#sprating").text(star);
+        });
+        // to sending data by ajax
+        $("#btnfeedback").click(function () {
+            var topic, star, feedback;
+           topic =  $("#Topic").val();
+            star = $("#Star_Rating").val();
+            feedback = $("#Message").html();
+            objData = { Topic: topic, Star_Rating: star, Message: feedback };
+            $.getJSON("/User/SaveFeedback", Object, function (data) {
+                alert(data);
+
+            });
+            
+
+
+        });
+    });
+</script>
+<div class="content" style="background-image: url('/Content/Images/Normals/Screenshot (6).png'); background-size: cover; background-repeat: no-repeat;">
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title text-center" style="color:#A81953">Feedback<hr style="background-color:#A81953;width:250px;"></h4>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-12 px-3 text-center">
+                                    <span style="width:70px;height:70px;margin-left:20px;margin-top:20px;color:yellow;">
+                                        <i class="fa-brands fa fa-star starrating" data-star="1" style="width:40px;height:50px;margin-left:20px;margin-top:20px;color:yellow;"></i>
+                                        <i class="fa-brands fa fa-star starrating" data-star="2" style="width:40px;height:50px;margin-left:20px;margin-top:20px;color:yellow;"></i>
+                                        <i class="fa-brands fa fa-star starrating" data-star="3" style="width:40px;height:50px;margin-left:20px;margin-top:20px;color:yellow;"></i>
+                                        <i class="fa-brands fa fa-star starrating" data-star="4" style="width:40px;height:50px;margin-left:20px;margin-top:20px;color:yellow;"></i>
+                                        <i class="fa-brands fa fa-star starrating" data-star="5" style="width:40px;height:50px;margin-left:20px;margin-top:20px;color:yellow;"></i>
+                                    </span>
+                                    <span id="sprating" style="display:none;" id="Star_Rating" name="Star_Rating"></span>
+                                </div>
+                                <div class="col-sm-12 px-3 pt-8">
+                                    <input type="text" placeholder="enterSubject" class="form-control" id="Topic" name="Topic">
+
+                                </div>
+                                <div class="col-sm-12 px-3">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="50" placeholder="type your feedback here............" style="height:200px;" id="Message" name="Message"></textarea>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <input type="submit" class="btn btn-info btn-fill pull-right mt-4 mb-4" id="btnfeedback" style="background-color:#A81953" value="Send Feedback">
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</div>

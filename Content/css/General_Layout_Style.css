@@ -1,0 +1,66 @@
+﻿.header
+{
+    background-color:#f75990;  
+    min-height:180px;
+}
+.logo
+{
+    background-color:cadetblue;
+    min-height:180px;
+    padding:0px;
+}
+.sitename
+{
+    background-color:indianred;
+    min-height:180px;
+    text-align:center;
+    font-size:40px;
+    font-weight:bolder;
+    padding-top:30px;
+    color:whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menu
+{
+    min-height:50px;
+    background-color:#0094ff9e;
+    padding:0px;
+}
+.main
+{
+    min-height:450px;
+    background-color:#76bb58e5;
+}
+.events
+{
+    min-height:50px;
+    background-color:#ee914fe7;
+}
+.content
+{
+    min-height:450px;
+    background-color:#71ce49e5;
+}
+.footer-top
+{
+    min-height:220px;
+    background-color:#5f5c5cc7;
+}
+.footer-bottom
+{
+    min-height:50px;
+    background-color:#000000df;
+}
+.nav-link
+{
+    margin-left:80px;
+    color:white;
+    font-size:20px;
+}
+.footer-link
+{
+    padding-top:3px;
+}
+.form-control {
+    margin-bottom: 20px;
+}

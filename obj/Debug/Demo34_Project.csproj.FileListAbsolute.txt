@@ -1,0 +1,376 @@
+F:\mvc\Demo34_Project\bin\Demo34_Project.dll.config
+F:\mvc\Demo34_Project\bin\Demo34_Project.dll
+F:\mvc\Demo34_Project\bin\Demo34_Project.pdb
+F:\mvc\Demo34_Project\bin\roslyn\csc.exe
+F:\mvc\Demo34_Project\bin\roslyn\csc.exe.config
+F:\mvc\Demo34_Project\bin\roslyn\csc.rsp
+F:\mvc\Demo34_Project\bin\roslyn\csi.exe
+F:\mvc\Demo34_Project\bin\roslyn\csi.exe.config
+F:\mvc\Demo34_Project\bin\roslyn\csi.rsp
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.Managed.Core.targets
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\mvc\Demo34_Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.AppContext.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Collections.Immutable.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Console.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Globalization.Calendars.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.IO.Compression.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.IO.FileSystem.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Net.Http.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Net.Sockets.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Reflection.Metadata.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.ValueTuple.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Xml.XmlDocument.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Xml.XPath.dll
+F:\mvc\Demo34_Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\mvc\Demo34_Project\bin\roslyn\vbc.exe
+F:\mvc\Demo34_Project\bin\roslyn\vbc.exe.config
+F:\mvc\Demo34_Project\bin\roslyn\vbc.rsp
+F:\mvc\Demo34_Project\bin\roslyn\VBCSCompiler.exe
+F:\mvc\Demo34_Project\bin\roslyn\VBCSCompiler.exe.config
+F:\mvc\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\mvc\Demo34_Project\bin\Microsoft.Web.Infrastructure.dll
+F:\mvc\Demo34_Project\bin\System.Web.Helpers.dll
+F:\mvc\Demo34_Project\bin\System.Web.Mvc.dll
+F:\mvc\Demo34_Project\bin\System.Web.Razor.dll
+F:\mvc\Demo34_Project\bin\System.Web.Webpages.Deployment.dll
+F:\mvc\Demo34_Project\bin\System.Web.Webpages.dll
+F:\mvc\Demo34_Project\bin\System.Web.Webpages.Razor.dll
+F:\mvc\Demo34_Project\bin\System.Web.Razor.xml
+F:\mvc\Demo34_Project\bin\System.Web.Webpages.xml
+F:\mvc\Demo34_Project\bin\System.Web.Webpages.Deployment.xml
+F:\mvc\Demo34_Project\bin\System.Web.Webpages.Razor.xml
+F:\mvc\Demo34_Project\bin\System.Web.Helpers.xml
+F:\mvc\Demo34_Project\bin\System.Web.Mvc.xml
+F:\mvc\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\mvc\Demo34_Project\obj\Debug\Demo34_Project.csproj.AssemblyReference.cache
+F:\mvc\Demo34_Project\obj\Debug\Demo34_Project.csproj.CoreCompileInputs.cache
+F:\mvc\Demo34_Project\obj\Debug\Demo34_Project.csproj.CopyComplete
+F:\mvc\Demo34_Project\obj\Debug\Demo34_Project.dll
+F:\mvc\Demo34_Project\obj\Debug\Demo34_Project.pdb
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\obj\Debug\Demo34_Project.csproj.AssemblyReference.cache
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\obj\Debug\Demo34_Project.csproj.CoreCompileInputs.cache
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\Demo34_Project.dll.config
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\Demo34_Project.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\Demo34_Project.pdb
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\csc.exe
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\csc.exe.config
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\csc.rsp
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\csi.exe
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\csi.exe.config
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\csi.rsp
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.Managed.Core.targets
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.AppContext.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Collections.Immutable.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Console.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Globalization.Calendars.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.IO.Compression.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.IO.FileSystem.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Net.Http.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Net.Sockets.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Reflection.Metadata.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.ValueTuple.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Xml.XmlDocument.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Xml.XPath.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\vbc.exe
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\vbc.exe.config
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\vbc.rsp
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\VBCSCompiler.exe
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\roslyn\VBCSCompiler.exe.config
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\EntityFramework.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\EntityFramework.SqlServer.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\Microsoft.Web.Infrastructure.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Helpers.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Mvc.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Razor.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Webpages.Deployment.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Webpages.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Webpages.Razor.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\EntityFramework.xml
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\EntityFramework.SqlServer.xml
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Razor.xml
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Webpages.xml
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Webpages.Deployment.xml
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Webpages.Razor.xml
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Helpers.xml
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\System.Web.Mvc.xml
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\obj\Debug\Demo34_Project.csproj.CopyComplete
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\obj\Debug\Demo34_Project.dll
+E:\PD\Apprenticeship in Kss\ASP.NET MVC 5Dec2022\class\Demo34_Project\obj\Debug\Demo34_Project.pdb
+E:\Demo34_Project\bin\Demo34_Project.dll.config
+E:\Demo34_Project\bin\Demo34_Project.dll
+E:\Demo34_Project\bin\Demo34_Project.pdb
+E:\Demo34_Project\bin\roslyn\csc.exe
+E:\Demo34_Project\bin\roslyn\csc.exe.config
+E:\Demo34_Project\bin\roslyn\csc.rsp
+E:\Demo34_Project\bin\roslyn\csi.exe
+E:\Demo34_Project\bin\roslyn\csi.exe.config
+E:\Demo34_Project\bin\roslyn\csi.rsp
+E:\Demo34_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Demo34_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Demo34_Project\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Demo34_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Demo34_Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Demo34_Project\bin\roslyn\System.AppContext.dll
+E:\Demo34_Project\bin\roslyn\System.Collections.Immutable.dll
+E:\Demo34_Project\bin\roslyn\System.Console.dll
+E:\Demo34_Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Demo34_Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Demo34_Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Demo34_Project\bin\roslyn\System.Globalization.Calendars.dll
+E:\Demo34_Project\bin\roslyn\System.IO.Compression.dll
+E:\Demo34_Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Demo34_Project\bin\roslyn\System.IO.FileSystem.dll
+E:\Demo34_Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Demo34_Project\bin\roslyn\System.Net.Http.dll
+E:\Demo34_Project\bin\roslyn\System.Net.Sockets.dll
+E:\Demo34_Project\bin\roslyn\System.Reflection.Metadata.dll
+E:\Demo34_Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Demo34_Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Demo34_Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Demo34_Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Demo34_Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Demo34_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Demo34_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Demo34_Project\bin\roslyn\System.ValueTuple.dll
+E:\Demo34_Project\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Demo34_Project\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Demo34_Project\bin\roslyn\System.Xml.XPath.dll
+E:\Demo34_Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Demo34_Project\bin\roslyn\vbc.exe
+E:\Demo34_Project\bin\roslyn\vbc.exe.config
+E:\Demo34_Project\bin\roslyn\vbc.rsp
+E:\Demo34_Project\bin\roslyn\VBCSCompiler.exe
+E:\Demo34_Project\bin\roslyn\VBCSCompiler.exe.config
+E:\Demo34_Project\bin\EntityFramework.dll
+E:\Demo34_Project\bin\EntityFramework.SqlServer.dll
+E:\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Demo34_Project\bin\Microsoft.Web.Infrastructure.dll
+E:\Demo34_Project\bin\System.Web.Helpers.dll
+E:\Demo34_Project\bin\System.Web.Mvc.dll
+E:\Demo34_Project\bin\System.Web.Razor.dll
+E:\Demo34_Project\bin\System.Web.Webpages.Deployment.dll
+E:\Demo34_Project\bin\System.Web.Webpages.dll
+E:\Demo34_Project\bin\System.Web.Webpages.Razor.dll
+E:\Demo34_Project\bin\EntityFramework.xml
+E:\Demo34_Project\bin\EntityFramework.SqlServer.xml
+E:\Demo34_Project\bin\System.Web.Razor.xml
+E:\Demo34_Project\bin\System.Web.Webpages.xml
+E:\Demo34_Project\bin\System.Web.Webpages.Deployment.xml
+E:\Demo34_Project\bin\System.Web.Webpages.Razor.xml
+E:\Demo34_Project\bin\System.Web.Helpers.xml
+E:\Demo34_Project\bin\System.Web.Mvc.xml
+E:\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Demo34_Project\obj\Debug\Demo34_Project.csproj.AssemblyReference.cache
+E:\Demo34_Project\obj\Debug\Demo34_Project.csproj.CoreCompileInputs.cache
+E:\Demo34_Project\obj\Debug\Demo34_Project.csproj.CopyComplete
+E:\Demo34_Project\obj\Debug\Demo34_Project.dll
+E:\Demo34_Project\obj\Debug\Demo34_Project.pdb
+C:\Users\ocis\Desktop\Demo34_Project\obj\Debug\Demo34_Project.csproj.AssemblyReference.cache
+C:\Users\ocis\Desktop\Demo34_Project\obj\Debug\Demo34_Project.csproj.CoreCompileInputs.cache
+C:\Users\ocis\Desktop\Demo34_Project\obj\Debug\Demo34_Project.dll
+C:\Users\ocis\Desktop\Demo34_Project\obj\Debug\Demo34_Project.pdb
+C:\Users\ocis\Desktop\Demo34_Project\bin\Demo34_Project.dll.config
+C:\Users\ocis\Desktop\Demo34_Project\bin\Demo34_Project.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\Demo34_Project.pdb
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\csc.exe
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\csc.exe.config
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\csc.rsp
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\csi.exe
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\csi.exe.config
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\csi.rsp
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.AppContext.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Console.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.IO.Compression.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Net.Http.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.ValueTuple.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\vbc.exe
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\vbc.exe.config
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\vbc.rsp
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\VBCSCompiler.exe
+C:\Users\ocis\Desktop\Demo34_Project\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ocis\Desktop\Demo34_Project\bin\EntityFramework.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\EntityFramework.SqlServer.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Helpers.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Mvc.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Razor.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Webpages.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Webpages.Razor.dll
+C:\Users\ocis\Desktop\Demo34_Project\bin\EntityFramework.xml
+C:\Users\ocis\Desktop\Demo34_Project\bin\EntityFramework.SqlServer.xml
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Razor.xml
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Webpages.xml
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Webpages.Razor.xml
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Helpers.xml
+C:\Users\ocis\Desktop\Demo34_Project\bin\System.Web.Mvc.xml
+C:\Users\ocis\Desktop\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ocis\Desktop\Demo34_Project\obj\Debug\Demo34_Project.csproj.CopyComplete
+D:\ASP.NET MVC\Demo34_Project\bin\Demo34_Project.dll.config
+D:\ASP.NET MVC\Demo34_Project\bin\Demo34_Project.dll
+D:\ASP.NET MVC\Demo34_Project\bin\Demo34_Project.pdb
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\csc.exe
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\csc.exe.config
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\csc.rsp
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\csi.exe
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\csi.exe.config
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\csi.rsp
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.Managed.Core.targets
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.AppContext.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Collections.Immutable.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Console.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Globalization.Calendars.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.IO.Compression.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.IO.FileSystem.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Net.Http.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Net.Sockets.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Reflection.Metadata.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.ValueTuple.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Xml.XmlDocument.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Xml.XPath.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\vbc.exe
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\vbc.exe.config
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\vbc.rsp
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\VBCSCompiler.exe
+D:\ASP.NET MVC\Demo34_Project\bin\roslyn\VBCSCompiler.exe.config
+D:\ASP.NET MVC\Demo34_Project\bin\EntityFramework.dll
+D:\ASP.NET MVC\Demo34_Project\bin\EntityFramework.SqlServer.dll
+D:\ASP.NET MVC\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\ASP.NET MVC\Demo34_Project\bin\Microsoft.Web.Infrastructure.dll
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Helpers.dll
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Mvc.dll
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Razor.dll
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Webpages.Deployment.dll
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Webpages.dll
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Webpages.Razor.dll
+D:\ASP.NET MVC\Demo34_Project\bin\EntityFramework.xml
+D:\ASP.NET MVC\Demo34_Project\bin\EntityFramework.SqlServer.xml
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Razor.xml
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Webpages.xml
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Webpages.Deployment.xml
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Webpages.Razor.xml
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Helpers.xml
+D:\ASP.NET MVC\Demo34_Project\bin\System.Web.Mvc.xml
+D:\ASP.NET MVC\Demo34_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\ASP.NET MVC\Demo34_Project\obj\Debug\Demo34_Project.csproj.AssemblyReference.cache
+D:\ASP.NET MVC\Demo34_Project\obj\Debug\Demo34_Project.csproj.CoreCompileInputs.cache
+D:\ASP.NET MVC\Demo34_Project\obj\Debug\Demo34_Project.csproj.CopyComplete
+D:\ASP.NET MVC\Demo34_Project\obj\Debug\Demo34_Project.dll
+D:\ASP.NET MVC\Demo34_Project\obj\Debug\Demo34_Project.pdb

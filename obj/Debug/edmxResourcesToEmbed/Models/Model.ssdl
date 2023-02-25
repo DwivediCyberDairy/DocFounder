@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Demo_Project_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AreaMaster">
+    <Key>
+      <PropertyRef Name="Area_Id" />
+    </Key>
+    <Property Name="Area_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Area_Name" Type="varchar" MaxLength="50" />
+    <Property Name="Related_City_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="CityMaster">
+    <Key>
+      <PropertyRef Name="City_Id" />
+    </Key>
+    <Property Name="City_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="City_Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EnquiryMaster">
+    <Key>
+      <PropertyRef Name="Enquiry_Id" />
+    </Key>
+    <Property Name="Enquiry_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="EmailId" Type="varchar" MaxLength="120" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="20" />
+    <Property Name="Enquiry_Message" Type="varchar(max)" />
+    <Property Name="Enquiry_DateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="LoginMaster">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" MaxLength="120" Nullable="false" />
+    <Property Name="User_Password" Type="varchar" MaxLength="250" />
+    <Property Name="User_Type" Type="varchar" MaxLength="20" />
+    <Property Name="User_Status" Type="bit" />
+    <Property Name="Login_Count" Type="int" />
+    <Property Name="Last_Login_DateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UploadManager">
+    <Key>
+      <PropertyRef Name="Upload_Id" />
+    </Key>
+    <Property Name="Upload_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title_of_File" Type="varchar" MaxLength="150" />
+    <Property Name="Description" Type="varchar" MaxLength="500" />
+    <Property Name="Uploaded_BY" Type="varchar" MaxLength="120" />
+    <Property Name="File_Name" Type="varchar" MaxLength="200" />
+    <Property Name="Folder_Name" Type="varchar" MaxLength="40" />
+    <Property Name="File_Type" Type="varchar" MaxLength="10" />
+    <Property Name="File_Size_In_KB" Type="float" />
+    <Property Name="Upload_DT" Type="datetime" />
+    <Property Name="Is_Del" Type="bit" />
+  </EntityType>
+  <EntityType Name="UserMaster">
+    <Key>
+      <PropertyRef Name="EmailId" />
+    </Key>
+    <Property Name="Name" Type="varchar" MaxLength="70" />
+    <Property Name="Gender" Type="varchar" MaxLength="10" />
+    <Property Name="EmailId" Type="varchar" MaxLength="120" Nullable="false" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="20" />
+    <Property Name="Related_City_Id" Type="int" />
+    <Property Name="Related_Area_Id" Type="int" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Picture_File_Name" Type="varchar" MaxLength="250" />
+    <Property Name="DateTime_of_Reg" Type="datetime" />
+    <Property Name="Is_Del" Type="bit" />
+  </EntityType>
+  <Association Name="FK_AreaMaster_CityMaster">
+    <End Role="CityMaster" Type="Self.CityMaster" Multiplicity="0..1" />
+    <End Role="AreaMaster" Type="Self.AreaMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityMaster">
+        <PropertyRef Name="City_Id" />
+      </Principal>
+      <Dependent Role="AreaMaster">
+        <PropertyRef Name="Related_City_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UploadManager_UserMaster">
+    <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="0..1" />
+    <End Role="UploadManager" Type="Self.UploadManager" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserMaster">
+        <PropertyRef Name="EmailId" />
+      </Principal>
+      <Dependent Role="UploadManager">
+        <PropertyRef Name="Uploaded_BY" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMaster_AreaMaster">
+    <End Role="AreaMaster" Type="Self.AreaMaster" Multiplicity="0..1" />
+    <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AreaMaster">
+        <PropertyRef Name="Area_Id" />
+      </Principal>
+      <Dependent Role="UserMaster">
+        <PropertyRef Name="Related_Area_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserMaster_CityMaster">
+    <End Role="CityMaster" Type="Self.CityMaster" Multiplicity="0..1" />
+    <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityMaster">
+        <PropertyRef Name="City_Id" />
+      </Principal>
+      <Dependent Role="UserMaster">
+        <PropertyRef Name="Related_City_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Demo_Project_DBModelStoreContainer">
+    <EntitySet Name="AreaMaster" EntityType="Self.AreaMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CityMaster" EntityType="Self.CityMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EnquiryMaster" EntityType="Self.EnquiryMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LoginMaster" EntityType="Self.LoginMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UploadManager" EntityType="Self.UploadManager" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserMaster" EntityType="Self.UserMaster" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AreaMaster_CityMaster" Association="Self.FK_AreaMaster_CityMaster">
+      <End Role="CityMaster" EntitySet="CityMaster" />
+      <End Role="AreaMaster" EntitySet="AreaMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UploadManager_UserMaster" Association="Self.FK_UploadManager_UserMaster">
+      <End Role="UserMaster" EntitySet="UserMaster" />
+      <End Role="UploadManager" EntitySet="UploadManager" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMaster_AreaMaster" Association="Self.FK_UserMaster_AreaMaster">
+      <End Role="AreaMaster" EntitySet="AreaMaster" />
+      <End Role="UserMaster" EntitySet="UserMaster" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserMaster_CityMaster" Association="Self.FK_UserMaster_CityMaster">
+      <End Role="CityMaster" EntitySet="CityMaster" />
+      <End Role="UserMaster" EntitySet="UserMaster" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

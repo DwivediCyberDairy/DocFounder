@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/General_Layout.cshtml";
+}
+<div class="row" style="padding-top:20px;padding-bottom:20px;background-color:#ffffff;">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4" style="margin-top:10px;margin-bottom:60px;padding-top:20px;padding-bottom:20px;min-height:300px;background-color:lightpink;">
+        <h2 class="text-center text-white"><i class="fa fa-key text-white"></i> Login</h2><hr style="background-color:white;" />
+        @using (Html.BeginForm("Login", "General", FormMethod.Post))
+        {
+            @Html.TextBox("UserId", null, new { placeholder = "UserId", @class = "form-control" })<br />
+            @Html.Password("User_Password", null, new { placeholder = "Password", @class = "form-control" })
+            <br />
+            <select name="User_Type" id="User_Type" class="form-control">
+                <option value="">User Type</option>
+                <option value="USER">User</option>
+                <option value="ADMIN">Admin</option>
+            </select><br />
+            <div class="row">
+                <div class="col-sm-6">
+                    <input type="submit" value="Login" class="btn btn-success btn-block" />
+                </div>
+                <div class="col-sm-6">
+                    <a href="#" id="LnkForgot" class="text-danger">Forgot Password?</a>
+                </div>
+            </div>
+            <p>@ViewBag.Message</p>
+        }
+    </div>
+    <div class="col-sm-4"></div>
+</div>

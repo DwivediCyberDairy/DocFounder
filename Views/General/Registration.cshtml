@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/General_Layout.cshtml";
+}
+
+<script>
+    $(document).ready(function () {
+        $("#Related_City_Id").change(function () {
+            var cid = $(this).val();
+            $.getJSON("/General/GetAreaUsingAJAX", { CityId: cid }, function (data) {
+                var items = "<option value=''>Select Area</option>";
+                $.each(data, function (index,area) {
+                    items = items + "<option value='" + area.Area_Id + "'>" + area.Area_Name + "</option>";
+                });
+                $("#Related_Area_Id").html(items);
+            });
+        });
+        //to refresh captcha code
+        $("#ImgRefresh").click(function () {
+            $.getJSON("/General/GetNewCaptchaImage", null, function (data) {
+                $("#Imgcaptcha").attr("src", data);
+            });
+        });
+        if ('@ViewBag.Message' != '') {
+            var msg = '@ViewBag.Message';
+            var x = msg.indexOf('success');
+            if (x >= 0)
+            {
+                //start: to clear controls
+                $("#Name").val("");
+                $("#EmailId").val("");
+                $("#MobileNo").val("");
+                $("#Related_City_Id").val("");
+                $("#Related_Area_Id").val("");
+                $("#Address").val("");
+                $("#CaptchaCode").val("");
+            }
+            //end to clear controls
+            var cls = x >= 0 ? 'bg-success' : 'bg-danger';
+            var str = " <p id='pmsg' class='"+cls+" text-white text-center' style='min-height:40px; font-size: 18px;'><i class='fa fa-circle-info text-warning'></i>@ViewBag.Message</p>";
+            $("#dvform h3").before(str);
+            setInterval(function () {
+                $("#pmsg").fadeOut(2000);
+            },5000);
+        }
+    });
+</script>
+<div class="row" style="min-height: 300px; padding-top: 20px; padding-bottom: 20px; background-color: darkorange; margin-top: 20px; margin-bottom: 20px;background-image: url('/Content/images/registrationback.jpg');background-repeat:no-repeat;background-size:cover;min-height:400px;">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+        <div class="row">
+            <div id="dvform" class="col-sm-7" style="background-color:black;padding-top:20px;padding-bottom:20px;">
+                <h3 class="text-center text-danger">Registration Form</h3><hr />
+                @using (Html.BeginForm("Registration", "General", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <div class="row">
+                        <div class="col-sm-6">
+                            @Html.TextBox("Name", null, new { placeholder = "Name", @class = "form-control" })
+                        </div>
+                        <div class="col-sm-6">
+                            <span class="form-control h5">
+                                @Html.RadioButton("Gender", "Male", true, new { style = "width:20px;height:15px;" }) Male
+                                @Html.RadioButton("Gender", "Female", false, new { style = "width:20px;height:15px;" }) Female
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            @Html.TextBox("EmailId", null, new { placeholder = "EmailId", @class = "form-control", type = "email" })
+                        </div>
+                        <div class="col-sm-6">
+                            @Html.TextBox("MobileNo", null, new { placeholder = "Mobile No", @class = "form-control", type = "number" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            @Html.DropDownList("Related_City_Id", null, "Select City", new { @class = "form-control" })
+                        </div>
+                        <div class="col-sm-6">
+                            <select id="Related_Area_Id" name="Related_Area_Id" class="form-control">
+                                <option value="">Select Area</option>
+                            </select>`
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            @Html.TextArea("Address", new { @class = "form-control", placeholder = "Address", rows = "3" })
+                        </div>
+                        <div class="col-sm-6">
+                            <span class="form-control">
+                                Profile Pic:
+                                <input type="file" name="UserPic" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            @Html.Password("Pass", null, new { @class = "form-control", placeholder = "Password" })
+                        </div>
+                        <div class="col-sm-6">
+                            @Html.Password("ConfPass", null, new { @class = "form-control", placeholder = "Confirm Password" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="form-control" style="padding-top:3px;padding-bottom:3px;">
+                                <img id="Imgcaptcha" src="~/Content/@ViewBag.Img" height="35px" />
+                                <img src="~/Content/images/icon/img.png" id="ImgRefresh" width="30px" height="30px" style="cursor:pointer;" title="Refresh Code" />
+                            </span>
+                        </div>
+                        <div class="col-sm-6">
+                            @Html.TextBox("CaptchaCode", null, new { @class = "form-control", placeholder = "Enter Captcha Code" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="submit" value="Register Now" class="btn btn-block btn-success" />
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="reset" value="Clear All" class="btn btn-block btn-danger" />
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+</div>

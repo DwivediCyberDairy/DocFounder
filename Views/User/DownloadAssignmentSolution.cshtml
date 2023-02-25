@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "DownloadAssignmentSolution";
+    Layout = "~/Views/Shared/User_Layout.cshtml";
+}
+
+@using Demo34_Project.Models
+@model IEnumerable<UploadManager>
+    
+<div class="row">
+    <div class="col-sm-12">
+        <table id="tbl" class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Submission Id</th>
+                    <th scope="col">Submitted By</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">File Type</th>
+                    <th scope="col">File Size(KB)</th>
+                    <th scope="col">Uploaded On</th>
+                    <th scope="col">Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{ 
+                    foreach(UploadManager um in Model)
+                    {
+                        <tr>
+                            <th>@um.Upload_Id</th>
+                            <th>
+                                <img src="~/Content/User_Profile_Pics/@um.UserMaster.Picture_File_Name" height="60px" style="border-radius:50%"/><br />
+                                <span>@um.UserMaster.Name</span>   @*This is Navigation property of EntityFramework*@
+                            </th>
+                            <td>@um.Title_of_File</td>
+                            <td>@um.Description</td>
+                            <td>@um.File_Type</td>
+                            <td>@um.File_Size_In_KB</td>
+                            <td>@um.Upload_DT</td>
+                            <td>
+                                @Html.ActionLink("Go", "Download", new {FolderName=um.Folder_Name,FileName=um.File_Name})
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

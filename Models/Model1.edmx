@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Demo_Project_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AreaMaster">
+          <Key>
+            <PropertyRef Name="Area_Id" />
+          </Key>
+          <Property Name="Area_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Area_Name" Type="varchar" MaxLength="50" />
+          <Property Name="Related_City_Id" Type="int" />
+        </EntityType>
+        <EntityType Name="CityMaster">
+          <Key>
+            <PropertyRef Name="City_Id" />
+          </Key>
+          <Property Name="City_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="City_Name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EnquiryMaster">
+          <Key>
+            <PropertyRef Name="Enquiry_Id" />
+          </Key>
+          <Property Name="Enquiry_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" />
+          <Property Name="EmailId" Type="varchar" MaxLength="120" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="20" />
+          <Property Name="Enquiry_Message" Type="varchar(max)" />
+          <Property Name="Enquiry_DateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="FeedbackMaster">
+          <Key>
+            <PropertyRef Name="Feedback_Id" />
+          </Key>
+          <Property Name="Feedback_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Submitted_By" Type="varchar" MaxLength="120" />
+          <Property Name="Topic" Type="varchar" MaxLength="150" />
+          <Property Name="Star_Rating" Type="int" />
+          <Property Name="Message" Type="varchar(max)" />
+          <Property Name="Submitted_On" Type="datetime" />
+        </EntityType>
+        <EntityType Name="LoginMaster">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="varchar" MaxLength="120" Nullable="false" />
+          <Property Name="User_Password" Type="varchar" MaxLength="250" />
+          <Property Name="User_Type" Type="varchar" MaxLength="20" />
+          <Property Name="User_Status" Type="bit" />
+          <Property Name="Login_Count" Type="int" />
+          <Property Name="Last_Login_DateTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="UploadManager">
+          <Key>
+            <PropertyRef Name="Upload_Id" />
+          </Key>
+          <Property Name="Upload_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Title_of_File" Type="varchar" MaxLength="150" />
+          <Property Name="Description" Type="varchar" MaxLength="500" />
+          <Property Name="Uploaded_BY" Type="varchar" MaxLength="120" />
+          <Property Name="File_Name" Type="varchar" MaxLength="200" />
+          <Property Name="Folder_Name" Type="varchar" MaxLength="40" />
+          <Property Name="File_Type" Type="varchar" MaxLength="10" />
+          <Property Name="File_Size_In_KB" Type="float" />
+          <Property Name="Upload_DT" Type="datetime" />
+          <Property Name="Is_Del" Type="bit" />
+        </EntityType>
+        <EntityType Name="UserMaster">
+          <Key>
+            <PropertyRef Name="EmailId" />
+          </Key>
+          <Property Name="Name" Type="varchar" MaxLength="70" />
+          <Property Name="Gender" Type="varchar" MaxLength="10" />
+          <Property Name="EmailId" Type="varchar" MaxLength="120" Nullable="false" />
+          <Property Name="MobileNo" Type="varchar" MaxLength="20" />
+          <Property Name="Related_City_Id" Type="int" />
+          <Property Name="Related_Area_Id" Type="int" />
+          <Property Name="Address" Type="varchar(max)" />
+          <Property Name="Picture_File_Name" Type="varchar" MaxLength="250" />
+          <Property Name="DateTime_of_Reg" Type="datetime" />
+          <Property Name="Is_Del" Type="bit" />
+        </EntityType>
+        <Association Name="FK_AreaMaster_CityMaster">
+          <End Role="CityMaster" Type="Self.CityMaster" Multiplicity="0..1" />
+          <End Role="AreaMaster" Type="Self.AreaMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CityMaster">
+              <PropertyRef Name="City_Id" />
+            </Principal>
+            <Dependent Role="AreaMaster">
+              <PropertyRef Name="Related_City_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_FeedbackMaster_UserMaster">
+          <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="0..1" />
+          <End Role="FeedbackMaster" Type="Self.FeedbackMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserMaster">
+              <PropertyRef Name="EmailId" />
+            </Principal>
+            <Dependent Role="FeedbackMaster">
+              <PropertyRef Name="Submitted_By" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UploadManager_UserMaster">
+          <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="0..1" />
+          <End Role="UploadManager" Type="Self.UploadManager" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserMaster">
+              <PropertyRef Name="EmailId" />
+            </Principal>
+            <Dependent Role="UploadManager">
+              <PropertyRef Name="Uploaded_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserMaster_AreaMaster">
+          <End Role="AreaMaster" Type="Self.AreaMaster" Multiplicity="0..1" />
+          <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AreaMaster">
+              <PropertyRef Name="Area_Id" />
+            </Principal>
+            <Dependent Role="UserMaster">
+              <PropertyRef Name="Related_Area_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserMaster_CityMaster">
+          <End Role="CityMaster" Type="Self.CityMaster" Multiplicity="0..1" />
+          <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CityMaster">
+              <PropertyRef Name="City_Id" />
+            </Principal>
+            <Dependent Role="UserMaster">
+              <PropertyRef Name="Related_City_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Demo_Project_DBModelStoreContainer">
+          <EntitySet Name="AreaMaster" EntityType="Self.AreaMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CityMaster" EntityType="Self.CityMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EnquiryMaster" EntityType="Self.EnquiryMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="FeedbackMaster" EntityType="Self.FeedbackMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LoginMaster" EntityType="Self.LoginMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UploadManager" EntityType="Self.UploadManager" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserMaster" EntityType="Self.UserMaster" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AreaMaster_CityMaster" Association="Self.FK_AreaMaster_CityMaster">
+            <End Role="CityMaster" EntitySet="CityMaster" />
+            <End Role="AreaMaster" EntitySet="AreaMaster" />
+          </AssociationSet>
+          <AssociationSet Name="FK_FeedbackMaster_UserMaster" Association="Self.FK_FeedbackMaster_UserMaster">
+            <End Role="UserMaster" EntitySet="UserMaster" />
+            <End Role="FeedbackMaster" EntitySet="FeedbackMaster" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UploadManager_UserMaster" Association="Self.FK_UploadManager_UserMaster">
+            <End Role="UserMaster" EntitySet="UserMaster" />
+            <End Role="UploadManager" EntitySet="UploadManager" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserMaster_AreaMaster" Association="Self.FK_UserMaster_AreaMaster">
+            <End Role="AreaMaster" EntitySet="AreaMaster" />
+            <End Role="UserMaster" EntitySet="UserMaster" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserMaster_CityMaster" Association="Self.FK_UserMaster_CityMaster">
+            <End Role="CityMaster" EntitySet="CityMaster" />
+            <End Role="UserMaster" EntitySet="UserMaster" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Demo_Project_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AreaMaster">
+          <Key>
+            <PropertyRef Name="Area_Id" />
+          </Key>
+          <Property Name="Area_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Area_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Related_City_Id" Type="Int32" />
+          <NavigationProperty Name="CityMaster" Relationship="Self.FK_AreaMaster_CityMaster" FromRole="AreaMaster" ToRole="CityMaster" />
+          <NavigationProperty Name="UserMasters" Relationship="Self.FK_UserMaster_AreaMaster" FromRole="AreaMaster" ToRole="UserMaster" />
+        </EntityType>
+        <EntityType Name="CityMaster">
+          <Key>
+            <PropertyRef Name="City_Id" />
+          </Key>
+          <Property Name="City_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="City_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="AreaMasters" Relationship="Self.FK_AreaMaster_CityMaster" FromRole="CityMaster" ToRole="AreaMaster" />
+          <NavigationProperty Name="UserMasters" Relationship="Self.FK_UserMaster_CityMaster" FromRole="CityMaster" ToRole="UserMaster" />
+        </EntityType>
+        <EntityType Name="EnquiryMaster">
+          <Key>
+            <PropertyRef Name="Enquiry_Id" />
+          </Key>
+          <Property Name="Enquiry_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EmailId" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="MobileNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Enquiry_Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Enquiry_DateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="LoginMaster">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="User_Password" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="User_Type" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="User_Status" Type="Boolean" />
+          <Property Name="Login_Count" Type="Int32" />
+          <Property Name="Last_Login_DateTime" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="UploadManager">
+          <Key>
+            <PropertyRef Name="Upload_Id" />
+          </Key>
+          <Property Name="Upload_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Title_of_File" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="Uploaded_BY" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="File_Name" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Folder_Name" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="File_Type" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="File_Size_In_KB" Type="Double" />
+          <Property Name="Upload_DT" Type="DateTime" Precision="3" />
+          <Property Name="Is_Del" Type="Boolean" />
+          <NavigationProperty Name="UserMaster" Relationship="Self.FK_UploadManager_UserMaster" FromRole="UploadManager" ToRole="UserMaster" />
+        </EntityType>
+        <EntityType Name="UserMaster">
+          <Key>
+            <PropertyRef Name="EmailId" />
+          </Key>
+          <Property Name="Name" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+          <Property Name="Gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="EmailId" Type="String" MaxLength="120" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MobileNo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Related_City_Id" Type="Int32" />
+          <Property Name="Related_Area_Id" Type="Int32" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Picture_File_Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="DateTime_of_Reg" Type="DateTime" Precision="3" />
+          <Property Name="Is_Del" Type="Boolean" />
+          <NavigationProperty Name="AreaMaster" Relationship="Self.FK_UserMaster_AreaMaster" FromRole="UserMaster" ToRole="AreaMaster" />
+          <NavigationProperty Name="CityMaster" Relationship="Self.FK_UserMaster_CityMaster" FromRole="UserMaster" ToRole="CityMaster" />
+          <NavigationProperty Name="UploadManagers" Relationship="Self.FK_UploadManager_UserMaster" FromRole="UserMaster" ToRole="UploadManager" />
+          <NavigationProperty Name="FeedbackMasters" Relationship="Demo_Project_DBModel.FK_FeedbackMaster_UserMaster" FromRole="UserMaster" ToRole="FeedbackMaster" />
+        </EntityType>
+        <Association Name="FK_AreaMaster_CityMaster">
+          <End Role="CityMaster" Type="Self.CityMaster" Multiplicity="0..1" />
+          <End Role="AreaMaster" Type="Self.AreaMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CityMaster">
+              <PropertyRef Name="City_Id" />
+            </Principal>
+            <Dependent Role="AreaMaster">
+              <PropertyRef Name="Related_City_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserMaster_AreaMaster">
+          <End Role="AreaMaster" Type="Self.AreaMaster" Multiplicity="0..1" />
+          <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AreaMaster">
+              <PropertyRef Name="Area_Id" />
+            </Principal>
+            <Dependent Role="UserMaster">
+              <PropertyRef Name="Related_Area_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserMaster_CityMaster">
+          <End Role="CityMaster" Type="Self.CityMaster" Multiplicity="0..1" />
+          <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CityMaster">
+              <PropertyRef Name="City_Id" />
+            </Principal>
+            <Dependent Role="UserMaster">
+              <PropertyRef Name="Related_City_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UploadManager_UserMaster">
+          <End Role="UserMaster" Type="Self.UserMaster" Multiplicity="0..1" />
+          <End Role="UploadManager" Type="Self.UploadManager" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserMaster">
+              <PropertyRef Name="EmailId" />
+            </Principal>
+            <Dependent Role="UploadManager">
+              <PropertyRef Name="Uploaded_BY" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Demo_Project_DBEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AreaMasters" EntityType="Self.AreaMaster" />
+          <EntitySet Name="CityMasters" EntityType="Self.CityMaster" />
+          <EntitySet Name="EnquiryMasters" EntityType="Self.EnquiryMaster" />
+          <EntitySet Name="LoginMasters" EntityType="Self.LoginMaster" />
+          <EntitySet Name="UploadManagers" EntityType="Self.UploadManager" />
+          <EntitySet Name="UserMasters" EntityType="Self.UserMaster" />
+          <AssociationSet Name="FK_AreaMaster_CityMaster" Association="Self.FK_AreaMaster_CityMaster">
+            <End Role="CityMaster" EntitySet="CityMasters" />
+            <End Role="AreaMaster" EntitySet="AreaMasters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserMaster_AreaMaster" Association="Self.FK_UserMaster_AreaMaster">
+            <End Role="AreaMaster" EntitySet="AreaMasters" />
+            <End Role="UserMaster" EntitySet="UserMasters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserMaster_CityMaster" Association="Self.FK_UserMaster_CityMaster">
+            <End Role="CityMaster" EntitySet="CityMasters" />
+            <End Role="UserMaster" EntitySet="UserMasters" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UploadManager_UserMaster" Association="Self.FK_UploadManager_UserMaster">
+            <End Role="UserMaster" EntitySet="UserMasters" />
+            <End Role="UploadManager" EntitySet="UploadManagers" />
+          </AssociationSet>
+          <EntitySet Name="FeedbackMasters" EntityType="Demo_Project_DBModel.FeedbackMaster" />
+          <AssociationSet Name="FK_FeedbackMaster_UserMaster" Association="Demo_Project_DBModel.FK_FeedbackMaster_UserMaster">
+            <End Role="UserMaster" EntitySet="UserMasters" />
+            <End Role="FeedbackMaster" EntitySet="FeedbackMasters" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="FeedbackMaster">
+          <Key>
+            <PropertyRef Name="Feedback_Id" />
+          </Key>
+          <Property Name="Feedback_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Submitted_By" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="Topic" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="Star_Rating" Type="Int32" />
+          <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Submitted_On" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="UserMaster" Relationship="Demo_Project_DBModel.FK_FeedbackMaster_UserMaster" FromRole="FeedbackMaster" ToRole="UserMaster" />
+        </EntityType>
+        <Association Name="FK_FeedbackMaster_UserMaster">
+          <End Type="Demo_Project_DBModel.UserMaster" Role="UserMaster" Multiplicity="0..1" />
+          <End Type="Demo_Project_DBModel.FeedbackMaster" Role="FeedbackMaster" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserMaster">
+              <PropertyRef Name="EmailId" />
+            </Principal>
+            <Dependent Role="FeedbackMaster">
+              <PropertyRef Name="Submitted_By" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Demo_Project_DBModelStoreContainer" CdmEntityContainer="Demo_Project_DBEntities1">
+          <EntitySetMapping Name="AreaMasters">
+            <EntityTypeMapping TypeName="Demo_Project_DBModel.AreaMaster">
+              <MappingFragment StoreEntitySet="AreaMaster">
+                <ScalarProperty Name="Area_Id" ColumnName="Area_Id" />
+                <ScalarProperty Name="Area_Name" ColumnName="Area_Name" />
+                <ScalarProperty Name="Related_City_Id" ColumnName="Related_City_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CityMasters">
+            <EntityTypeMapping TypeName="Demo_Project_DBModel.CityMaster">
+              <MappingFragment StoreEntitySet="CityMaster">
+                <ScalarProperty Name="City_Id" ColumnName="City_Id" />
+                <ScalarProperty Name="City_Name" ColumnName="City_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EnquiryMasters">
+            <EntityTypeMapping TypeName="Demo_Project_DBModel.EnquiryMaster">
+              <MappingFragment StoreEntitySet="EnquiryMaster">
+                <ScalarProperty Name="Enquiry_Id" ColumnName="Enquiry_Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="Enquiry_Message" ColumnName="Enquiry_Message" />
+                <ScalarProperty Name="Enquiry_DateTime" ColumnName="Enquiry_DateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LoginMasters">
+            <EntityTypeMapping TypeName="Demo_Project_DBModel.LoginMaster">
+              <MappingFragment StoreEntitySet="LoginMaster">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+                <ScalarProperty Name="User_Type" ColumnName="User_Type" />
+                <ScalarProperty Name="User_Status" ColumnName="User_Status" />
+                <ScalarProperty Name="Login_Count" ColumnName="Login_Count" />
+                <ScalarProperty Name="Last_Login_DateTime" ColumnName="Last_Login_DateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UploadManagers">
+            <EntityTypeMapping TypeName="Demo_Project_DBModel.UploadManager">
+              <MappingFragment StoreEntitySet="UploadManager">
+                <ScalarProperty Name="Upload_Id" ColumnName="Upload_Id" />
+                <ScalarProperty Name="Title_of_File" ColumnName="Title_of_File" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Uploaded_BY" ColumnName="Uploaded_BY" />
+                <ScalarProperty Name="File_Name" ColumnName="File_Name" />
+                <ScalarProperty Name="Folder_Name" ColumnName="Folder_Name" />
+                <ScalarProperty Name="File_Type" ColumnName="File_Type" />
+                <ScalarProperty Name="File_Size_In_KB" ColumnName="File_Size_In_KB" />
+                <ScalarProperty Name="Upload_DT" ColumnName="Upload_DT" />
+                <ScalarProperty Name="Is_Del" ColumnName="Is_Del" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserMasters">
+            <EntityTypeMapping TypeName="Demo_Project_DBModel.UserMaster">
+              <MappingFragment StoreEntitySet="UserMaster">
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Gender" ColumnName="Gender" />
+                <ScalarProperty Name="EmailId" ColumnName="EmailId" />
+                <ScalarProperty Name="MobileNo" ColumnName="MobileNo" />
+                <ScalarProperty Name="Related_City_Id" ColumnName="Related_City_Id" />
+                <ScalarProperty Name="Related_Area_Id" ColumnName="Related_Area_Id" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Picture_File_Name" ColumnName="Picture_File_Name" />
+                <ScalarProperty Name="DateTime_of_Reg" ColumnName="DateTime_of_Reg" />
+                <ScalarProperty Name="Is_Del" ColumnName="Is_Del" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="FeedbackMasters">
+            <EntityTypeMapping TypeName="Demo_Project_DBModel.FeedbackMaster">
+              <MappingFragment StoreEntitySet="FeedbackMaster">
+                <ScalarProperty Name="Submitted_On" ColumnName="Submitted_On" />
+                <ScalarProperty Name="Message" ColumnName="Message" />
+                <ScalarProperty Name="Star_Rating" ColumnName="Star_Rating" />
+                <ScalarProperty Name="Topic" ColumnName="Topic" />
+                <ScalarProperty Name="Submitted_By" ColumnName="Submitted_By" />
+                <ScalarProperty Name="Feedback_Id" ColumnName="Feedback_Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
